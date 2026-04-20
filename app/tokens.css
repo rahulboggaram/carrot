@@ -1,0 +1,23 @@
+/* This file is generated. Do not edit by hand. */
+/* Run: npm run tokens */
+
+:root {
+  --color-grey-400: #E8E8E8;
+  --color-grey-500: #5E5E5E;
+  --color-grey-900: #1E2826;
+  --type-label-lg-font-family: 'Manrope', sans-serif;
+  --type-label-lg-font-size: 18px;
+  --type-label-lg-font-weight: 600;
+  --type-label-lg-letter-spacing: 0px;
+  --type-label-lg-line-height: 24px;
+  --type-paragraph-lg-font-family: 'Manrope', sans-serif;
+  --type-paragraph-lg-font-size: 18px;
+  --type-paragraph-lg-font-weight: 400;
+  --type-paragraph-lg-letter-spacing: 0px;
+  --type-paragraph-lg-line-height: 28px;
+  --type-paragraph-sm-font-family: 'Manrope', sans-serif;
+  --type-paragraph-sm-font-size: 14px;
+  --type-paragraph-sm-font-weight: 400;
+  --type-paragraph-sm-letter-spacing: 0px;
+  --type-paragraph-sm-line-height: 20px;
+}

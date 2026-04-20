@@ -1,26 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+
 @import "tailwindcss";
 
+@import "./tokens.css";
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* In early iterations, not every token lives in Figma Variables yet.
+     We keep a small set of “app-level” semantic tokens here until they’re migrated. */
+  --color-grey-0: #FFFFFF;
+  --color-grey-200: #F2F2F2;
+  --color-yellow-500: #FEC42E;
+  --color-green-600: #0E8345;
+  --color-red-600: #DE1135;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-content-primary: #1E2826;
+  --color-content-tertiary: var(--color-grey-500);
+  --color-content-disabled: #A6A6A6;
+  --color-content-negative: var(--color-red-600);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background-primary: var(--color-grey-0);
+  --color-background-tertiary: var(--color-grey-400);
+  --color-background-disabled: #F3F3F3;
+
+  --color-border-selected: var(--color-grey-900);
+  --color-border-negative: var(--color-red-600);
+  --color-brand-primary: var(--color-yellow-500);
+
+  --font-manrope: var(--type-paragraph-lg-font-family);
+  --radius-md: 8px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope);
+  color: var(--color-content-primary);
+  background: var(--color-grey-200);
 }
