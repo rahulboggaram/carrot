@@ -1,11 +1,12 @@
 {
-  "name": "yellow-metal-ds",
+  "name": "carrot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "tokens": "node scripts/generate-tokens.mjs",
     "lint": "eslint"
   },
   "dependencies": {
