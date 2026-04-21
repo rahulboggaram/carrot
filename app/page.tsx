@@ -10,7 +10,7 @@ export default function Home() {
           TextInput
         </h1>
         <p style={{ fontFamily: "Manrope, sans-serif", fontSize: "14px", color: "#5E5E5E" }}>
-          Yellow Metal Design System · Generated from Figma
+          Carrot · Generated from Figma
         </p>
       </div>
 

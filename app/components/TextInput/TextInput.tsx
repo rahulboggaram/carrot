@@ -43,14 +43,15 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
           <div style={{
             display: "flex",
             alignItems: "center",
-            gap: "2px",
             height: "24px",
             width: "100%",
           }}>
             <label
               htmlFor={inputId}
               style={{
-                flex: 1,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0px",
                 fontFamily: "Manrope, sans-serif",
                 fontWeight: 600,
                 fontSize: "18px",
@@ -59,21 +60,9 @@ const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
                 cursor: "default",
               }}
             >
-              {label}
+              <span>{label}</span>
+              {showOptional && <span style={{ whiteSpace: "nowrap" }}>(Optional)</span>}
             </label>
-            {showOptional && (
-              <span style={{
-                flexShrink: 0,
-                whiteSpace: "nowrap",
-                fontFamily: "Manrope, sans-serif",
-                fontWeight: 600,
-                fontSize: "18px",
-                lineHeight: "24px",
-                color: disabled ? "var(--color-content-disabled)" : "var(--color-content-primary)",
-              }}>
-                (Optional)
-              </span>
-            )}
           </div>
         )}
 

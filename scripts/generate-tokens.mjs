@@ -26,7 +26,6 @@ function flatten(obj, prefix = []) {
 }
 
 function cssVarLine(name, value) {
-  if (typeof value === "number") return `  --${name}: ${value};`;
   return `  --${name}: ${value};`;
 }
 

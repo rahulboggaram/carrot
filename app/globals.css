@@ -13,10 +13,17 @@
   --color-green-600: #0E8345;
   --color-red-600: #DE1135;
 
-  --color-content-primary: #1E2826;
-  --color-content-tertiary: var(--color-grey-500);
-  --color-content-disabled: #A6A6A6;
-  --color-content-negative: var(--color-red-600);
+  /* Base semantic tokens (used for Tailwind @theme mapping) */
+  --ds-content-primary: #1E2826;
+  --ds-content-tertiary: var(--color-grey-500);
+  --ds-content-disabled: #A6A6A6;
+  --ds-content-negative: var(--color-red-600);
+
+  /* Runtime semantic tokens (used directly by inline styles) */
+  --color-content-primary: var(--ds-content-primary);
+  --color-content-tertiary: var(--ds-content-tertiary);
+  --color-content-disabled: var(--ds-content-disabled);
+  --color-content-negative: var(--ds-content-negative);
 
   --color-background-primary: var(--color-grey-0);
   --color-background-tertiary: var(--color-grey-400);
@@ -28,6 +35,14 @@
 
   --font-manrope: var(--type-paragraph-lg-font-family);
   --radius-md: 8px;
+}
+
+/* Tailwind v4 theme tokens (enables utilities like `text-content-*`) */
+@theme {
+  --color-content-primary: var(--ds-content-primary);
+  --color-content-tertiary: var(--ds-content-tertiary);
+  --color-content-disabled: var(--ds-content-disabled);
+  --color-content-negative: var(--ds-content-negative);
 }
 
 body {
